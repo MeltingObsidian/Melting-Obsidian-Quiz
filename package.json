@@ -1,0 +1,16 @@
+{
+  "name": "meltingobsidian",
+  "version": "1.0.0",
+  "description": "Melting Obsidian's extremely easy to use and fully featured quiz web application",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "author": "Melting Obsidian",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.3"
+  }
+}

@@ -1,0 +1,213 @@
+.dark{
+    --bg: #420058;
+}
+body{
+    font-family: sans-serif;
+    font-size: 24px;
+    margin: auto;
+    padding: 20px 20px;
+    background: #420058;
+    color: #fff;
+}
+.moquiz-section{
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px #0008;
+    position: relative;
+    padding: 10px 16px;
+    margin: auto;
+    width: 90%;
+    background: #bc84d89c;
+    margin-bottom: 20px;
+}
+.moquiz-container{
+    background: #3c004794;
+    border-radius: 20px;
+    padding: 10px 10px;
+}
+.moquiz-container {
+    background: #3c004794;
+    border-radius: 20px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+}
+.moquiz-question, 
+.moquiz-description, 
+.moquiz-title, 
+.moquiz-section-title {
+    position: relative;
+    margin: 10px 16px;
+    border-bottom: transparent;
+    width: 60%;
+}
+.moquiz-paragraph {
+    margin: 20px 2px;
+    padding: 20px 20px;
+    white-space: pre-wrap;
+}
+*{
+    outline: none;
+}
+.moquiz-button{
+    background: linear-gradient(-45deg, #39007a, #8000ff, #8000aa, #ff8000);
+    border-radius: 7px;
+    color: #fff;
+    padding: 7px 20px;
+    margin:16px 16px;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+    box-shadow: 0px 0px 10px #0006;
+    transition: 1.5s;
+}
+.moquiz-button.no-rec{
+    background: #e7e7e7 !important;
+    border: 2px solid #949494;
+    color: #949494;
+    text-shadow: 0px 0px 2px #000;
+}
+.moquiz-button.no-rec:hover{
+    box-shadow: inset 0 0 0 100vmax #70707040;
+}
+.moquiz-button:hover{
+    box-shadow: inset 0 0 0 100vmax #ff800040;
+}
+#save-btn{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+#signout-btn{ 
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+.moquiz-section-main{
+    position: relative;
+    padding: 15px 20px;
+    display: block;
+    margin: auto;
+    border-radius: 20px;
+}
+.moquiz-section-title:focus, 
+.moquiz-question:focus, 
+.moquiz-description:focus, 
+.moquiz-title:focus{
+    border-bottom: 2px solid #8000ff;
+}
+.moquiz-dropdown{
+    border-radius: 7px;
+    margin: 12px 12px;
+    padding: 7px 20px;
+    border: 2px solid #8000aa;
+    color: #8000aa;
+    letter-spacing: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.moquiz-dropdown option:first-child{
+    background: #8000aa;
+    color: #fff;
+    font-weight: bold;
+}
+.moquiz-dropdown option{
+    letter-spacing: 3px;
+    font-size: 20px;
+    border-radius: 7px;
+    background: #fff;
+}
+.moquiz-dropdown option::selection{
+    background: #8000aa !important;
+    color: #fff !important;
+}
+.moquiz-math-input{
+    resize: vertical;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 16px 12px;
+    display: block;
+    font-size: 24px;
+
+}
+.moquiz-editor{
+    padding: 20px 20px;
+    margin: auto;
+    border-radius: 20px;
+    border: 2px solid #8000ff;
+}
+.moquiz-ai-text-completion{
+    font-weight: bold;
+}
+#save-file-input{
+    position: absolute;
+    display: block;
+    margin: auto;
+    padding: 20px 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: blueviolet;
+    border-radius: 20px;
+    box-shadow: 5px 5px 20px #0008;
+    z-index: 3;
+}
+#save-file-input-bg{
+    position: absolute;
+    background: #5d5d5d2d;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    left: 0px;
+    top: 0px;
+    z-index: 2;
+}
+.moquiz-text-input{
+    position: relative;
+    display: inline;
+    padding: 10px 10px;
+    border-radius: 20px;
+    border: 2px solid #e7e7e7;
+    font-size: 20px;
+}
+.moquiz-slider-container{
+    position: relative;
+    display: block;
+    margin: 20px 20px;
+}
+.moquiz-slider-range{
+    width: 100%;
+    background: red;
+    height: 5px;
+    position: relative;
+}
+/*.moquiz-slider{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background: pink;
+    left: 97px;
+    top: 0px;
+    transform: translateY(-7px);
+    border-radius: 20px;
+}*/
+.moquiz-slider-min-value{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 5px;
+}
+.moquiz-slider-max-value{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 5px;
+}
+.moquiz-slider-label{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 5px;
+}

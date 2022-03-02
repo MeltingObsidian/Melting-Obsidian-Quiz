@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sign In</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <meta name="google-signin-client_id" content="416030417638-urh4nlr608etmssd75f9qterub8d7apg.apps.googleusercontent.com">
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script src="signIn.js">
+    </script>
+    <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark" data-longtitle="true"></div>
+    <button onclick="force()">Sign In</button>
+    <div id="signout" onclick="signOut()">Sign Out</div>
+</body>
+</html>
