@@ -246,33 +246,6 @@ function load(){
                                 image.attr("src", imageLink.val())
                                 assign(quiz, ['sections', section.attr('id'), 'questions', container.attr('id'), 'elements', questionPartContainer.attr('id'), 'url'], imageLink.val())
                             })
-                            /*
-                            
-                            ####   ####  #####    #
-                            #   #  #       #     # #
-                            ####   ####    #    #   #
-                            #   #  #       #    #####
-                            ####   ####    #    #   #
-
-                            var drivePicker = $("<button>Choose from Google Drive</button>")
-                            drivePicker.click(() =>{
-                                gapi.load('picker', () =>{
-                                    var view = new google.picker.View(google.picker.ViewId.DOCS_IMAGES)
-                                    var picker = new google.picker.PickerBuilder()
-                                        .disableFeature(google.picker.Feature.NAV_HIDDEN)
-                                        .disableFeature(google.picker.Feature.MULTISELECT_ENABLED)
-                                        .setAppId("416030417638")
-                                        .setOAuthToken(gapi.auth.getToken().access_token)
-                                        .addView(view)
-                                        .addView(new google.picker.DocsUploadView())
-                                        .setDeveloperKey("AIzaSyCvdZqmTvmb5PHekDyZD063cw-kmZsvYnU")
-                                        .setCallback((data) =>{
-                                            console.log(data)
-                                        })
-                                        .build()
-                                    picker.setVisible(true)
-                                })
-                            })*/
                             removeButton.click(() =>{
                                 questionPartContainer.slideUp()
                             })
